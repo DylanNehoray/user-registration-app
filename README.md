@@ -1,14 +1,14 @@
 Run Steps: 
 backend:
-    1. open terminal and cd into backend folder
-    2. run "pip install -r requirements.txt"
-    3. run "python seed_db.py" to seed the database
-    4. run "uvicorn app.main:app --reload" to run the server on localhost:8000
+1. open terminal and cd into backend folder
+2. run "pip install -r requirements.txt"
+3. run "python seed_db.py" to seed the database
+4. run "uvicorn app.main:app --reload" to run the server on localhost:8000
 
 frontend:
-    1. open terminal and cd into frontend folder
-    2. run "npm install"
-    3. run "npm run dev" to run the server on localhost:3000
+1. open terminal and cd into frontend folder
+2. run "npm install"
+3. run "npm run dev" to run the server on localhost:3000
 
 
 Tests:
