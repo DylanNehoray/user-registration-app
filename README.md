@@ -18,9 +18,6 @@ I made sure to test each individual function created by the ai properly in order
 When i came to styling, the initial setup was good, but it was easier to manually modify any specific changes like
 centering and spacing as opposed to using the ai to change it.
 
-Trade offs:
-
-
 AI Prompts:
 1. i need to make a project for a coding job interview, it involves making a react fronend website with a python backend, here is the specs: "Overview Build a small user registration app with a Python backend and a ReactJS frontend. The app will have: ● User registration with strict validation. ● User profile page (view and edit profile details). ● Welcome page that greets the user (e.g., “Hello, Ada!”) after login. Technical Constraints ● Frontend: React (TypeScript optional). Tailwind recommended. ● Backend: FastAPI or Flask with Pydantic/marshmallow. ● Password. ● SQLite for storage; seed via script."
 
