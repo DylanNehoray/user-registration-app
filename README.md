@@ -12,11 +12,11 @@ frontend:
 
 
 Tests:
-    used http://localhost:8000/docs and http://localhost:8000/redoc to test the backend with fastAPI
+used http://localhost:8000/docs and http://localhost:8000/redoc to test the backend with fastAPI
 
-    I made sure to test each individual function created by the ai properly in order to validate the outputs it gave. 
-    When i came to styling, the initial setup was good, but it was easier to manually modify any specific changes like
-    centering and spacing as opposed to using the ai to change it.
+I made sure to test each individual function created by the ai properly in order to validate the outputs it gave. 
+When i came to styling, the initial setup was good, but it was easier to manually modify any specific changes like
+centering and spacing as opposed to using the ai to change it.
 
 Trade offs:
 
