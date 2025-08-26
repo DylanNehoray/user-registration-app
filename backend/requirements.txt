@@ -6,8 +6,4 @@ python-multipart
 python-jose[cryptography]
 passlib[bcrypt]
 bcrypt==4.0.1
-<<<<<<< HEAD
 email-validator
-=======
-email-validator
->>>>>>> 9e593c8e373be0a0b763897ba169de7dc6a0ff4c
