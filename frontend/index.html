@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://cdn.prod.website-files.com/680a5df4a488e09ae0bd3735/681a48a42eb458cd7fa8850f_Favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GetCovered.io User Registration Portal - Secure account creation and management" />
+    <meta name="theme-color" content="#4f46e5" />
+    
+    <!-- Preconnect to Google Fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Inter font for modern typography -->
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+      rel="stylesheet" 
+    />
+    
+    <title>GetCovered.io - User Registration</title>
+    
+    <style>
+      /* Prevent flash of unstyled content */
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+      }
+      
+      /* Loading spinner for initial load */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 3px solid #e5e7eb;
+        border-top: 3px solid #4f46e5;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+      
+      /* Hide loading spinner once React loads */
+      #root:not(:empty) + .loading-spinner {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- React root element -->
+    <div id="root"></div>
+    
+    <!-- Loading spinner (shown while React is loading) -->
+    <div class="loading-spinner"></div>
+    
+    <!-- Vite script injection point -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Accessibility: Skip to main content link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-indigo-600 text-white px-4 py-2 rounded-md z-50">
+      Skip to main content
+    </a>
+  </body>
+</html>
